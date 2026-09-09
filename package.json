@@ -1,0 +1,21 @@
+{
+  "name": "ai-radar",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI Radar — Live Flight Tracker using OpenSky Network, React, Express and MCP.",
+  "workspaces": ["frontend", "backend", "mcp-server"],
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:backend": "npm --workspace backend run dev",
+    "dev:frontend": "npm --workspace frontend run dev",
+    "build": "npm run build:backend && npm run build:frontend && npm run build:mcp",
+    "build:backend": "npm --workspace backend run build",
+    "build:frontend": "npm --workspace frontend run build",
+    "build:mcp": "npm --workspace mcp-server run build",
+    "start:backend": "npm --workspace backend start",
+    "start:mcp": "npm --workspace mcp-server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
