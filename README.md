@@ -1,5 +1,7 @@
 # ✈️ AI Radar — Live Flight Tracker
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/arish096/ai-radar---live-flight-tracker-)](https://m8ven.ai/mcp/arish096/ai-radar---live-flight-tracker-)
+
 > **A real-time aircraft tracking platform powered by OpenSky Network, with an interactive radar UI and grounded AI assistance through Astra / MCP.**
 
 AI Radar is a production-oriented live flight tracking application that visualizes **real aircraft data** from the OpenSky Network on an interactive world map.
